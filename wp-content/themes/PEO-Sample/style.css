@@ -1,0 +1,2628 @@
+/*
+Theme Name: PEO Sample
+Author: Giselle Tavares for studies - Layout and content from website peo.on.ca
+Description: Just a sample from the PEO website for studies. Not for reproduction.
+Version: 0.1
+Text Domain: peosample
+*/
+
+/* FROM HERE ---> COPY FROM PEO WEBSITE peo.on.ca for studies!!! */
+/*
+/* 
+ * HTML5 Boilerplate Starts
+ *
+ * What follows is the result of much research on cross-browser styling. 
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ *
+ * Detailed information about this CSS: h5bp.com/css
+ * 
+ * Dreamweaver modifications:
+ * 1. Commented out selection highlight
+ * 2. Removed media queries section (we add our own in a separate file)
+ *
+ * ==|== normalize ==========================================================
+ */
+
+
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+
+/*
+ * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
+ * 2. Force vertical scrollbar in non-IE
+ * 3. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
+ */
+
+html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+
+body, button, input, select, textarea { font-family: sans-serif; color: #222; }
+
+/* 
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate
+ * Also: hot pink! (or customize the background color to match your design)
+ */
+
+/* Dreamweaver: uncomment these if you do want to customize the selection highlight
+ *::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
+ *::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+ */
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+
+a { color: #00e; }
+a:visited { color: #551a8b; }
+a:hover { color: #06e; }
+a:focus { outline: thin dotted; }
+
+/* Improve readability when focused and hovered in all browsers: h5bp.com/h */
+a:hover, a:active { outline: 0; }
+
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+
+abbr[title] { border-bottom: 1px dotted; }
+
+b, strong { font-weight: bold; }
+
+blockquote { margin: 1em 40px; }
+
+dfn { font-style: italic; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+ins { background: #ff9; color: #000; text-decoration: none; }
+
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+
+/* Redeclare monospace font family: h5bp.com/j */
+pre, code, kbd, samp { font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 1em; }
+
+/* Improve readability of pre-formatted text in all browsers */
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+
+small { font-size: 85%; }
+
+/* Position subscript and superscript content without affecting line-height: h5bp.com/k */
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+
+/*
+ * 1. Improve image quality when scaled in IE7: h5bp.com/d
+ * 2. Remove the gap between images and borders on image containers: h5bp.com/e 
+ */
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+
+/*
+ * Correct overflow not hidden in IE9 
+ */
+
+svg:not(:root) { overflow: hidden; }
+
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+
+figure { margin: 0; }
+
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+
+/* Indicate that 'label' will shift focus to the associated form element */
+label { cursor: pointer; }
+
+/* 
+ * 1. Correct color not inheriting in IE6/7/8/9 
+ * 2. Correct alignment displayed oddly in IE6/7 
+ */
+
+legend { border: 0; *margin-left: -7px; padding: 0; }
+
+/*
+ * 1. Correct font-size not inheriting in all browsers
+ * 2. Remove margins in FF3/4 S5 Chrome
+ * 3. Define consistent vertical alignment display in all browsers
+ */
+
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+
+/*
+ * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
+ * 2. Correct inner spacing displayed oddly in IE6/7
+ */
+
+button, input { line-height: normal; *overflow: visible; }
+
+/*
+ * Reintroduce inner spacing in 'table' to avoid overlap and whitespace issues in IE6/7
+ */
+
+table button, table input { *overflow: auto; }
+
+/*
+ * 1. Display hand cursor for clickable form elements
+ * 2. Allow styling of clickable form elements in iOS
+ */
+
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+
+/*
+ * Consistent box sizing and appearance
+ */
+
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+
+/* 
+ * Remove inner padding and border in FF3/4: h5bp.com/l 
+ */
+
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+/* 
+ * 1. Remove default vertical scrollbar in IE6/7/8/9 
+ * 2. Allow only vertical resizing
+ */
+
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+
+/* Colors for form validity */
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+
+/* ==|== primary styles =====================================================
+   Author: 
+   ========================================================================== */
+/* ==|== non-semantic helper classes ========================================
+   Please define your styles before this section.
+   ========================================================================== */
+
+/* For image replacement */
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir br { display: none; }
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden { display: none !important; visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+/* Contain floats: h5bp.com/q */ 
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+.clear { clear: both; }
+
+
+/* ==|== print styles =======================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+ 
+ @media print {
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* h5bp.com/t */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
+
+/*HTML5 Boilerplate Ends*/
+
+
+
+/* Desktop Layout: 960px to a max of 1600px.   */
+
+@media only screen and (min-width: 1024px)  {
+body { 
+	margin: 0; 
+	font-size: 75%; 
+}	
+a {
+	text-decoration:none;	
+}
+a:hover {
+	text-decoration:underline;	
+}
+p {
+	float:left;
+	width:100%;
+	line-height:115%;	
+}	
+h5 {
+	font-size:146%;
+	color:#000000;
+	margin-bottom:7.5%;
+	width:100%;
+	float:left;
+	margin-top:0;
+	font-weight:normal;	
+}
+h6 {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:137.5%;
+	color:#00335b;
+	margin-bottom:3.36%;
+	width:100%;
+	float:left;
+	margin-top:0;
+	font-weight:normal;	
+}
+.gridContainer {
+	/*width: 88.2%;*/
+	width:100%
+	/*max-width: 1232px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;*/
+	margin: auto;
+}
+#top-bar {
+	width:100%;
+	background-color:#054170;
+	height:4px;	
+}
+header {
+	max-width: 930px;
+	margin:0 auto;
+}
+#logo {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	margin-top:10px;
+	width: 28.5714%;
+	display: block;
+	
+}
+#header-right {
+	clear: none;
+	float: right;
+	margin-right:0;
+	max-width:33.184%;
+	display: block;
+}
+#socials {
+	float:right;	
+	margin-right:7.79%;
+}
+a.fb, a.li, a.tw, a.yt {
+	width:28px;
+	height:30px;
+	cursor:pointer;	
+	margin-left:3px;
+	margin-top:3px;
+	text-indent:-9999px;
+	float:left;
+}
+a.fb {
+	background:url(../images/fb.png) no-repeat;	
+}
+a.li {
+	background:url(../images/li.png) no-repeat;	
+}
+a.tw {
+	background:url(../images/tw.png) no-repeat;	
+}
+a.yt {
+	background:url(../images/yt.png) no-repeat;	
+}
+
+#social-bottom {
+	float:right;
+	margin-top:4.29%;
+	margin-right:7.79%;
+	width:92%;
+}
+span.licence-holder {
+	float:right;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:95%;
+	color:#00335b;	
+	padding-right:10px;
+	margin-top:2.5%;
+	border-right:1px solid #00335b;
+	line-height:103%;
+}
+span.licence-holder a {
+	color:#00335b;
+}
+span.text-sizes {
+	float:right;
+	margin-left:15px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	margin-top:-13px;	
+}
+
+#search-box {
+	float:right;	
+	margin-top:6px;
+	margin-right:3.99%;
+	background:#01355d;
+	padding:2.2% 4.9%;
+	width:84%;
+	
+	border-radius:10px 10px 0 0;
+	-moz-border-radius:10px 10px 0 0;
+	-webkit-border-radius:10px 10px 0 0;
+}
+#search-box label {
+	float:left;
+	color:#ffffff;
+	font-weight:bold;	
+	/*line-height:17px;*/
+	width:89%;
+}
+#search-box label input {
+	float:none;
+	width:73%;
+	height:17px;
+	line-height:17px;
+	border:1px solid #000000;
+	color:#000000;	
+	text-indent:7px;
+}
+.btn-go {
+	float:left;
+	width:10%;
+	height:21px;
+	background-color:#3c7d90;
+	color:#ffffff;
+	line-height:21px;
+	border:none;
+	cursor:pointer;	
+	position:relative;
+	left:-4px;
+}
+.btn-go:hover {
+	background-color:#3f7585;	
+}
+
+/*navigation area*/
+#nav {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	
+	/*position:relative;*/
+	/*z-index:99;*/
+	height:50px;
+	border-top:1px solid #81cee7;
+	border-bottom:1px solid #81cee7;
+	
+	background: #00335b; /* Old browsers */
+	background: -moz-linear-gradient(top,  #00335b 0%, #094a7d 19%, #094a7d 76%, #00335b 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00335b), color-stop(19%,#094a7d), color-stop(76%,#094a7d), color-stop(100%,#00335b)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #00335b 0%,#094a7d 19%,#094a7d 76%,#00335b 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #00335b 0%,#094a7d 19%,#094a7d 76%,#00335b 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #00335b 0%,#094a7d 19%,#094a7d 76%,#00335b 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #00335b 0%,#094a7d 19%,#094a7d 76%,#00335b 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00335b', endColorstr='#00335b',GradientType=0 ); /* IE6-9 */
+	
+}
+
+
+#menu {
+	list-style:none;
+	width:930px;
+	margin:0 auto;
+	height:39px;
+	padding-left:0;
+
+	}
+
+#menu > li {
+	float:left;
+	display:block;
+	text-align:center;
+	position:relative;
+	/*padding: 12px 15px 6px 16px;*/
+	padding: 1.29% 1.355% 0.6451% 1.520%;
+	line-height:16px;
+	
+}
+
+#menu > li:hover {
+	/* Background color and gradients */
+	
+	background: #f5f7fc;
+}
+#menu > li.about-li {
+	line-height:28px;	
+	padding:10px 10px 12px 0px;
+}
+#menu > li.about-li-drop {
+	line-height:28px;	
+	padding: 1.29% 0.89% 0.6451% 0%;
+	/*margin-left:35px!important;*/
+}
+#menu > li > a {
+	font-size:13px; 
+	color: #ffffff;
+	display:block;
+	outline:0;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+#menu > li:hover > a {
+	color:#074474;
+}
+#menu > li > .drop {
+	padding-left:10px;
+	padding-bottom:11.5%;
+	background:url("http://peo.on.ca/multimedia/images/dd-arrow.png") no-repeat left 8px;
+	height:36px;
+}
+#menu > li:hover > .drop {
+	background:url("http://peo.on.ca/multimedia/images/dd-arrow-hover.png") no-repeat left 8px;
+	padding-bottom:17.5%;
+}
+#menu > li.menu-sep {
+	width:1px;	
+	background-color:#7c8a95;
+	padding:0;
+	height:93%;
+	margin:7px 0 0;
+}
+
+/*dropdown menu area*/
+.bdr-eraser {
+	display:none;	
+}
+#menu > li.about-li:hover > .bdr-eraser {
+	display:block;
+	position:absolute;
+	left:0;
+	top:50px;
+	bottom:1px;
+	width:99%;
+	height:10px;
+	background:#ffffff;	
+	z-index:56;
+	border-left:1px solid #c2c6c9;
+	border-right:1px solid #c2c6c9;
+}
+.mega-dd-container {
+	margin:4px auto;
+	/*float:left;*/
+	position:absolute;
+	/*left:-999em;*/ /* Hides the drop down */
+	display:none;
+	
+	text-align:left;
+	padding:10px 5px 10px 5px;
+	border:1px solid #c2c6c9;
+
+	z-index:50;	
+	background-color:#f5f7fc;
+	width:850px;	
+}
+#menu li:hover .mega-dd-container {
+	left:0px;
+	top:auto;
+	display:block;
+	
+    -moz-box-shadow: 2px 2px 5px #b0b0b0;
+    -webkit-box-shadow: 2px 2px 5px #b0b0b0;
+    box-shadow: 2px 2px 5px #b0b0b0;
+}
+
+.dd-items {
+	float:left;
+	width:21%;
+	margin-top:10px;
+	margin-left:30px;
+}
+.dd-items h5 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	font-weight:bold;
+	color:#151515;	
+	margin-bottom:5px;
+	line-height:20px;
+}
+.dd-items ul {
+	float:left;
+	width:100%;	
+	margin:0;
+	padding:0;
+}
+.dd-items ul li {
+	float:left;
+	width:100%;
+	list-style:none;
+	background:url(http://peo.on.ca/multimedia/images/li-bg-arrow.png) left 9px no-repeat;
+	padding-left:15px;
+	text-align:left;
+	line-height:21px;
+}
+.dd-items ul li a {
+	float:left;
+	width:100%;
+	color:#000000;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:11px;
+}
+/*content area*/
+#content {
+	max-width: 930px;
+	margin:0.5% auto 0;
+}
+#banner {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 74.30%;
+	display: block;
+	margin-right:0.299%;
+	height:299px;
+	
+} 
+#banner a{
+position:absolute;
+}
+.banner-img {
+	padding:0.5873%;
+	border:1px solid #cbcac9;	
+	max-width:98.5%;
+}
+#banner-right {
+	clear: none;
+	float: left;
+	width: 22.312%;
+	/*height:120px;*/
+	height:118px;
+	display: block;
+	padding:1.3721% 1.3721% 1.36% 1.3721%;
+	border:1px solid #cbcac9;
+	position:relative;
+}
+
+#banner-right ul {
+	float:left;
+	padding-left:0;
+	margin-top:0;	
+}
+#banner-right ul li {
+	list-style:none;
+	padding-left:13%;
+	float:left;
+}
+.upcoming-events ul li {
+	background:url(http://peo.on.ca/multimedia/images/li-bg.png) left 6px no-repeat;	
+}
+#banner-right ul li a {
+	font-size:89%;
+	color:#000000;	
+	float:left;
+	line-height:177.9%;
+    width:171px;
+    width:171px\9;
+    *width:171px; 
+}
+a.read-more {
+	font-size:90%;
+	font-weight:bold;
+	color:#ffffff;
+	background:#01345c;
+	padding:1.81% 3.05%;
+	position:absolute;
+	right:2%;
+	bottom:0;	
+	
+	border-radius:5px 5px 0 0;
+	-moz-border-radius:5px 5px 0 0;
+	-webkit-border-radius:5px 5px 0 0;
+}
+#banner-right a:hover {
+	text-decoration:underline;	
+}
+.latest-updates {
+	margin-top:0.4%;	
+}
+.latest-updates ul li {
+	background:url(http://peo.on.ca/multimedia/images/li-bg2.png) left 4px no-repeat;	
+}
+
+
+#four-box-container {
+	width:100%;
+	margin:0 auto;
+}
+.four-boxes {
+	float: left;
+	margin-left: 0;
+	margin-right:0.299%;
+	margin-top:0.0%;
+	padding:0.322%;
+	width: 23.599%;
+	display: block;
+	/*height:202px;*/
+	height:158px;
+	border:1px solid #cbcac9;
+	
+}
+
+.four-boxes div {
+	position:relative;
+	/*padding:5.45% 2.27% 4.54% 5.45%;*/
+	padding: 3.45% 1.27% 2.54% 3.45%;
+	float:left;
+	/*height:180px; */
+	height:145px;
+}
+.four-boxes div p {
+margin-top:6px;
+	
+}
+
+
+
+.four-boxes div  h5{
+    margin-bottom: 0.0%;
+}
+
+a.more-details {
+	float:left;	
+	border:1px solid #ffffff;
+	padding:2.27% 3.63%;
+	border-radius:15px;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	color:#ffffff;
+	font-weight:bold;
+	font-size:88%;
+	text-transform:uppercase;
+	
+	position:absolute;
+	/*bottom:7.58%; */
+	bottom:4.58%;
+	left:4.54%;
+	
+}
+a.more-details:hover {
+	text-decoration:underline;	
+}
+
+
+#public-students  div{
+	background-color:#79ddfa;
+}
+#applicants  div {
+	background-color:#d4f89a;
+}
+#eits  div {
+	background-color:#d1ccbf;
+}
+#eits {
+	width:23.9%;	
+}
+#volunteers div {
+	background-color:#bcc0d7;
+}
+#volunteers {
+	width:24.35%;
+	margin-right:0;
+}
+
+#public-students a.more-details {
+	background-color:#00335b;
+}
+#applicants a.more-details {
+	background-color:#73880a;
+	margin-top:14px;
+}
+#eits a.more-details {
+	background-color:#60605b;
+	margin-top:14px;
+}
+#volunteers a.more-details {
+	background-color:#646986;
+}
+
+/*footer area*/
+footer {
+	max-width: 927px;
+	margin:0.6677% auto 0 auto;
+	background-color:#00335b;
+	height:58px;
+	position:relative;
+}
+.footer-menu {
+	margin:0 auto;
+	padding-left:21.1434%;
+	padding-top:0.7551%;
+		
+}
+.footer-menu li {
+	list-style:none;
+	display:inline;	
+}
+.footer-menu li a {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:89%;
+	color:#ffffff;	
+}
+.footer-menu li a:hover {
+	text-decoration:underline;	
+}
+.footer-menu li.footer-ul-sep {
+	margin:0 1.09%;
+	color:#ffffff;	
+}
+.copyright {
+	color:#dddddd;
+	font-family:Verdana, Geneva, sans-serif;
+	font-weight:bold;
+	font-size:85%;
+	float:right;
+	width:auto;
+	margin-right:1.4%;	
+}
+
+
+
+/*custom style*/
+.licence-holder-ipad {
+	display:none;	
+}
+.licence-holder-mobile {
+	display:none;
+}
+.mobile-menu-container {
+	display:none;
+}
+#nav-ipad-landscape {
+	display:none;	
+}
+.ipad-landscape-menu-container {
+	display:none;	
+}
+} /*end of media query*/
+
+
+/* Desktop Layout Ends  */
+
+/* Tablet Layout(Landscape): 769px to a max of 959px.   */
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+body { 
+	margin: 0; 
+	font-size: 75%; 
+}	
+a {
+	text-decoration:none;	
+}
+a:hover {
+	text-decoration:underline;	
+}
+p {
+	float:left;
+	width:100%;
+	line-height:115%;	
+}	
+h5 { 
+	font-size:146%;
+	color:#000000;
+	margin-bottom:0%;
+	width:100%;
+	float:left;
+	margin-top:0;
+	font-weight:normal;	
+}
+h6 {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:137.5%;
+	color:#00335b;
+	margin-bottom:3.36%;
+	width:100%;
+	float:left;
+	margin-top:0;
+	font-weight:normal;	
+}
+.gridContainer {
+	/*width: 88.2%;*/
+	width:100%
+	/*max-width: 1232px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;*/
+	margin: auto;
+}
+#top-bar {
+	width:100%;
+	background-color:#054170;
+	height:4px;	
+}
+header {
+	max-width: 930px;
+	margin:0 auto;
+}
+#logo {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	margin-top:10px;
+	width: 28.5714%;
+	display: block;
+	
+}
+#header-right {
+	clear: none;
+	float: right;
+	margin-right:0;
+	max-width:40.184%;
+	display: block;
+}
+#socials {
+	float:right;	
+	margin-right:7.79%;
+}
+a.fb, a.li, a.tw, a.yt {
+	width:28px;
+	height:30px;
+	cursor:pointer;	
+	margin-left:3px;
+	margin-top:3px;
+	text-indent:-9999px;
+	float:left;
+}
+a.fb {
+	background:url(../images/fb.png) no-repeat;	
+}
+a.li {
+	background:url(../images/li.png) no-repeat;	
+}
+a.tw {
+	background:url(../images/tw.png) no-repeat;	
+}
+a.yt {
+	background:url(../images/yt.png) no-repeat;	
+}
+
+#social-bottom {
+	float:right;
+	margin-top:4.29%;
+	margin-right:7.79%;
+	width:92%;
+}
+span.licence-holder {
+	float:right;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:95%;
+	color:#00335b;	
+	padding-right:10px;
+	margin-top:2.5%;
+	border-right:1px solid #00335b;
+	line-height:103%;
+}
+span.licence-holder a {
+	color:#00335b;
+}
+span.text-sizes {
+	float:right;
+	margin-left:15px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	margin-top:-13px;	
+}
+
+#search-box {
+	float:right;	
+	margin-top:6px;
+	margin-right:3.99%;
+	background:#01355d;
+	padding:2.2% 4.9%;
+	width:84%;
+	
+	border-radius:10px 10px 0 0;
+	-moz-border-radius:10px 10px 0 0;
+	-webkit-border-radius:10px 10px 0 0;
+}
+#search-box label {
+	float:left;
+	color:#ffffff;
+	font-weight:bold;	
+	/*line-height:17px;*/
+	width:89%;
+}
+#search-box label input {
+	float:none;
+	width:73%;
+	height:17px;
+	line-height:17px;
+	border:1px solid #000000;
+	color:#000000;	
+	text-indent:7px;
+}
+.btn-go {
+	float:left;
+	width:10%;
+	height:21px;
+	background-color:#3c7d90;
+	color:#ffffff;
+	line-height:21px;
+	border:none;
+	cursor:pointer;	
+	position:relative;
+	left:-4px;
+    text-align: center;	
+}
+.btn-go:hover {
+	background-color:#3f7585;	
+}
+
+/*navigation area*/
+#nav-ipad-landscape {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	
+	position:relative;
+	z-index:99;
+	height:50px;
+	border-top:1px solid #81cee7;
+	border-bottom:1px solid #81cee7;
+	
+	background: #00335b; /* Old browsers */
+	background: -moz-linear-gradient(top,  #00335b 0%, #094a7d 19%, #094a7d 76%, #00335b 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00335b), color-stop(19%,#094a7d), color-stop(76%,#094a7d), color-stop(100%,#00335b)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #00335b 0%,#094a7d 19%,#094a7d 76%,#00335b 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #00335b 0%,#094a7d 19%,#094a7d 76%,#00335b 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #00335b 0%,#094a7d 19%,#094a7d 76%,#00335b 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #00335b 0%,#094a7d 19%,#094a7d 76%,#00335b 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00335b', endColorstr='#00335b',GradientType=0 ); /* IE6-9 */
+	
+}
+
+
+#menu-ipad-landscape {
+	list-style:none;
+	width:930px;
+	margin:0 auto;
+	height:39px;
+	padding-left:0;
+
+	}
+/* modified by ramsai 29/01/2013*/
+#menu-ipad-landscape > li {
+	float:left;
+	display:block;
+	text-align:center;
+	position:relative;
+	/*padding: 12px 15px 6px 16px;*/
+	padding: 1.29% 1.365% 0.6451% 1.520%;
+	line-height:16px;
+	
+}
+
+#menu-ipad-landscape > li:hover {
+	/* Background color and gradients */
+	
+	background: #f5f7fc;
+}
+#menu-ipad-landscape > li.about-li {
+	line-height:28px;
+	padding: 10px 8px 10px 5px;	
+}
+#menu-ipad-landscape > li.about-li-drop {
+	line-height:28px;	
+	padding: 10px 0px 0px 10px;
+	
+	/*padding: 1.29% 0.89% 0.6451% 7.89%;
+	margin-left:35px!important;*/
+}
+#menu-ipad-landscape > li > a {
+	font-size:13px; 
+	color: #ffffff;
+	display:block;
+	outline:0;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+#menu-ipad-landscape > li:hover > a {
+	color:#074474;
+}
+#menu-ipad-landscape > li > .drop {
+	padding-left:12px;
+	padding-bottom:11.5%;
+	background:url("http://peo.on.ca/multimedia/images/dd-arrow.png") no-repeat left 8px;
+	height:25px;
+}
+#menu-ipad-landscape > li:hover > .drop {
+	background:url("http://peo.on.ca/multimedia/images/dd-arrow-hover.png") no-repeat left 8px;
+	padding-bottom:17.5%;
+}
+#menu-ipad-landscape > li.menu-sep {
+	width:1px;	
+	background-color:#7c8a95;
+	padding:0;
+	height:93%;
+	margin:7px 0 0;
+}
+
+/*dropdown menu area*/
+.bdr-eraser {
+	display:none;	
+}
+#menu-ipad-landscape > li.about-li:hover > .bdr-eraser {
+	display:block;
+	position:absolute;
+	left:0;
+	top:50px;
+	bottom:1px;
+	width:99%;
+	height:10px;
+	background:#ffffff;	
+	z-index:56;
+	border-left:1px solid #c2c6c9;
+	border-right:1px solid #c2c6c9;
+}
+
+.ipad-landscape-menu-container {
+	display:block;	
+	width:100%;
+	margin:0 auto;
+}
+.ipad-landscape-menu-container .main-links {
+	float:left;
+	margin-bottom:5px;
+	border:1px solid #c5cbd0;
+	width:99.351%;
+	position:relative;
+	
+	background: #f8f9f9; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f8f9f9 0%, #eeeeee 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f9f9), color-stop(100%,#eeeeee)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f8f9f9 0%,#eeeeee 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f8f9f9 0%,#eeeeee 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f8f9f9 0%,#eeeeee 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f8f9f9 0%,#eeeeee 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f9f9', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+	padding-left:0;
+	margin-left:0;
+	
+}
+.ipad-landscape-menu-container .main-links > a {
+	cursor:pointer;
+	float:left;
+	color:#000000;
+	font-size:20px;
+	width: 83%;
+	height:48px;
+	line-height:48px;
+	background:url(http://peo.on.ca/multimedia/images/mobile-mainlinks-arrow.png) 20px no-repeat;
+	padding-left:49px;
+	
+}
+.ipad-landscape-menu-container .main-links a:hover {
+	text-decoration:underline;	
+}
+.ipad-landscape-menu-container .main-links > a.mainlinks_selected {
+	background: #e8e8e8; /* Old browsers */
+	background:url(http://peo.on.ca/multimedia/images/arrow-down.png) 20px no-repeat, -moz-linear-gradient(top,  #e8e8e8 0%, #c2c3c7 100%); /* FF3.6+ */
+	background:url(http://peo.on.ca/multimedia/images/arrow-down.png) 20px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e8e8e8), color-stop(100%,#c2c3c7)); /* Chrome,Safari4+ */
+	background:url(http://peo.on.ca/multimedia/images/arrow-down.png) 20px no-repeat, -webkit-linear-gradient(top,  #e8e8e8 0%,#c2c3c7 100%); /* Chrome10+,Safari5.1+ */
+	background:url(http://peo.on.ca/multimedia/images/arrow-down.png) 20px no-repeat, -o-linear-gradient(top,  #e8e8e8 0%,#c2c3c7 100%); /* Opera 11.10+ */
+	background:url(http://peo.on.ca/multimedia/images/arrow-down.png) 20px no-repeat, -ms-linear-gradient(top,  #e8e8e8 0%,#c2c3c7 100%); /* IE10+ */
+	background:url(http://peo.on.ca/multimedia/images/arrow-down.png) 20px no-repeat, linear-gradient(to bottom,  #e8e8e8 0%,#c2c3c7 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8e8e8', endColorstr='#c2c3c7',GradientType=0 ); /* IE6-9 */
+	
+	border-bottom:1px solid #bfc6cc;
+
+}
+
+/*mobile menu main links > menu first level*/
+.ipad-landscape-menu-container .main-links ul#ipad_landscape_first_level {
+	float:left;	
+	display:none;
+	padding-left:0;
+	width:100%;
+	margin-top:0;
+	
+}
+.ipad-landscape-menu-container .main-links ul#ipad_landscape_first_level > li {
+	float:left;
+	list-style:none;
+	display:inline-block;
+	width:100%;
+	padding-left:0;
+	margin-left:0;
+	border-bottom:1px solid #bfc6cc;
+	
+}
+.ipad-landscape-menu-container .main-links ul#ipad_landscape_first_level > li > a {
+	cursor:pointer;
+	float:left;
+	color:#3a3b68;
+	font-size:16px;
+	font-weight:bold;
+	width: 75.4%;
+	height:36px;
+	line-height:36px;
+	background:url(http://peo.on.ca/multimedia/images/mobile-menu-first-level-arrow.png) 40px no-repeat;
+	padding-left:70px;
+	
+}
+
+/*mobile menu main links > menu first level > menu second level */
+.ipad-landscape-menu-container .main-links ul {
+	margin-bottom:0;	
+}
+.ipad-landscape-menu-container .main-links ul#ipad_landscape_first_level ul#ipad_landscape_second_level {
+	float:left;	
+	display:none;
+	padding-left:0;
+	width:100%;
+	margin-top:0;
+}
+.ipad-landscape-menu-container .main-links ul#ipad_landscape_second_level > li {
+	float:left;
+	list-style:none;
+	display:inline-block;
+	width:30%;
+	padding-left:0;
+	margin-left:0;
+	
+}
+.ipad-landscape-menu-container .main-links ul#ipad_landscape_second_level > li > a {
+	cursor:pointer;
+	float:left;
+	color:#272f8f;
+	font-size:16px;
+	font-weight:bold;
+	width: 100%;
+	padding-top:1.99%;
+	padding-bottom:1.99%;
+	line-height:auto;
+	background:url(http://peo.on.ca/multimedia/images/mobile-menu-second-level-arrow.png) 60px no-repeat;
+	padding-left:90px;
+	
+	vertical-align:middle;
+}
+.ipad-landscape-menu-container .main-links ul#ipad_landscape_first_level > li > a.ipad_landscape_first_level_selected {
+	background:url(http://peo.on.ca/multimedia/images/arrow-down.png) 40px no-repeat #e0e0e2;
+	border-bottom:1px solid #bfc6cc;
+	width:93%;
+}
+
+/*mobile menu main links > menu first level > menu second level > menu third level */
+.ipad-landscape-menu-container .main-links ul#ipad_landscape_first_level ul#ipad_landscape_second_level ul#menu_third_level {
+	float:left;	
+	display:none;
+	padding-left:0;
+	width:100%;
+	margin-top:0;
+}
+.ipad-landscape-menu-container .main-links ul#ipad_landscape_second_level > li > ul#menu_third_level > li {
+	float:left;
+	list-style:none;
+	display:inline-block;
+	width:100%;
+	padding-left:0;
+	margin-left:0;
+	border-bottom:1px solid #bfc6cc;
+	
+}
+.ipad-landscape-menu-container .main-links ul#menu_third_level > li > a {
+	cursor:pointer;
+	float:left;
+	color:#272f8f;
+	font-size:16px;
+	font-weight:bold;
+	width: 61.5%%;
+	padding-top:1.99%;
+	padding-bottom:1.99%;
+	line-height:auto;
+	background:url(http://peo.on.ca/multimedia/images/mobile-menu-third-level-arrow.png) 80px no-repeat;
+	padding-left:110px;
+	
+	vertical-align:middle;
+}
+.ipad-landscape-menu-container .main-links ul#ipad_landscape_second_level > li > a.ipad_landscape_second_level_selected {
+	background:url(http://peo.on.ca/multimedia/images/arrow-down.png) 60px no-repeat #e0e0e2;
+	border-bottom:1px solid #bfc6cc;
+}
+/*content area*/
+#content {
+	max-width: 930px;
+	margin:0.5% auto 0;
+}
+#banner {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	max-width:692px;
+	width: 98%;
+	display: block;
+	margin-right:0.299%;
+	height:236px;
+}
+#banner a{
+position:absolute;
+}
+.banner-img {
+	padding:0.5873%;
+	border:1px solid #cbcac9;	
+	max-width:680px;
+	width:100%;
+}
+#banner-right {
+	clear: none;
+	float: left;
+	width: 22.312%;
+	height:119px;
+	display: block;
+	padding:1.3721% 1.3721% 1.36% 1.3721%;
+	border:1px solid #cbcac9;
+	position:relative;
+}
+#banner-right ul {
+	float:left;
+	padding-left:0;
+	margin-top:0; 	 
+}
+#banner-right ul li {
+	list-style:none;
+	padding-left:10%;
+	float:left;
+}
+.upcoming-events ul li {
+	background:url(http://peo.on.ca/multimedia/images/li-bg.png) left 6px no-repeat;	
+}
+#banner-right ul li a {
+	font-size:89%;
+	color:#000000;	
+	float:left;
+	line-height:177.9%;
+}
+a.read-more {
+	font-size:90%;
+	font-weight:bold;
+	color:#ffffff;
+	background:#01345c;
+	padding:1.81% 3.05%;
+	position:absolute;
+	right:2%;
+	bottom:0;	
+	
+	border-radius:5px 5px 0 0;
+	-moz-border-radius:5px 5px 0 0;
+	-webkit-border-radius:5px 5px 0 0;
+}
+#banner-right a:hover {
+	text-decoration:underline;	
+}
+.latest-updates {
+	margin-top:0.4%;	
+}
+.latest-updates ul li {
+	background:url(http://peo.on.ca/multimedia/images/li-bg2.png) left 4px no-repeat;	
+}
+
+
+#four-box-container {
+	width:100%;
+	margin:0 auto;
+}
+.four-boxes {
+	float: left;
+	margin-left: 0;
+	margin-right:0.299%;
+	margin-top:0.645%;
+	padding:0.322%;
+	width: 23.6% !important;
+	display: block;
+	height:152px;
+	border:1px solid #cbcac9;
+	
+}
+
+.four-boxes div {
+	position:relative;
+	padding:3.45% 0.27% 0.54% 4.45%;
+	float:left;
+	height:143px;
+}
+.four-boxes div p {
+	
+}
+a.more-details {
+	float:left;	
+	border:1px solid #ffffff;
+	padding:2.27% 3.63%;
+	border-radius:15px;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	color:#ffffff;
+	font-weight:bold;
+	font-size:88%;
+	text-transform:uppercase;
+	
+	position:absolute;
+	bottom:3.58%;
+	left:4.54%;
+	
+}
+a.more-details:hover {
+	text-decoration:underline;	
+}
+
+
+#public-students  div{
+	background-color:#79ddfa;
+}
+#applicants  div {
+	background-color:#d4f89a;
+}
+#eits  div {
+	background-color:#d1ccbf;
+}
+#eits {
+	width:24.91% !important;	
+}
+#volunteers div {
+	background-color:#bcc0d7;
+}
+#volunteers {
+	width:24.70% !important;
+/*	width:25.3% !important;  */
+	margin-right:0;
+}
+
+#public-students a.more-details {
+	background-color:#00335b;
+}
+#applicants a.more-details {
+	background-color:#73880a;
+	margin-top:14px;
+}
+#eits a.more-details {
+	background-color:#60605b;
+	margin-top:14px;
+}
+#volunteers a.more-details {
+	background-color:#646986;
+}
+
+/*footer area*/
+footer {
+	max-width: 927px;
+	margin:0.6677% auto 0 auto;
+	background-color:#00335b;
+	height:58px;
+	position:relative;
+}
+.footer-menu {
+	margin:0 auto;
+	padding-left:21.1434%;
+	padding-top:0.7551%;
+		
+}
+.footer-menu li {
+	list-style:none;
+	display:inline;	
+	
+}
+.footer-menu li a {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:89%;
+	color:#ffffff;	
+}
+.footer-menu li a:hover {
+	text-decoration:underline;	
+}
+.footer-menu li.footer-ul-sep {
+	margin:0 1.09%;
+	color:#ffffff;	
+}
+.copyright {
+	color:#dddddd;
+	font-family:Verdana, Geneva, sans-serif;
+	font-weight:bold;
+	font-size:85%;
+	float:right;
+	width:auto;
+	margin-right:1.4%;	
+}
+
+
+
+/*custom style*/
+.licence-holder-ipad {
+	display:none;	
+}
+.licence-holder-mobile {
+	display:none;
+}
+.mobile-menu-container {
+	display:none;
+}
+
+#nav {
+	display:none;	
+}
+} /*end of media query*/
+
+
+/* Tablet Layout(Landscape) Ends  */
+
+/* Tablet Layout(Portrait): 481px to 768px.  */
+
+@media only screen and (min-width: 641px) and (max-width: 768px) {
+body { 
+	margin: 0; 
+	font-size: 75%; 
+}		
+a {
+	text-decoration:none;	
+}
+a:hover {
+	text-decoration:underline;	
+}
+p {
+	float:left;
+	width:100%;
+	line-height:115%;	
+}		
+h5 {
+	font-size:146%;
+	color:#000000;
+	margin-bottom:7.5%;
+	width:100%;
+	float:left;
+	margin-top:0;
+	font-weight:normal;
+}
+h6 {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:137.5%;
+	color:#00335b;
+	margin-bottom:3.36%;
+	width:100%;
+	float:left;
+	margin-top:0;
+	font-weight:normal;	
+}	
+.gridContainer {
+	/*width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;*/
+	
+	width:100%
+	margin: auto;
+}
+#top-bar {
+	width:100%;
+	background-color:#054170;
+	height:4px;	
+}
+#logo {
+	clear: both;
+	float: left;
+	margin-left: -15px;
+	width: 28.5714%;
+	display: block;
+}
+header {
+	max-width: 768px;
+	margin:0 auto;
+	padding-left: 4.94%;
+	padding-right: 4.94%;
+}
+#header-right {
+	clear: none;
+	float: right;
+	margin-left: 4.1666%;
+	margin-top:2.4979%;
+	max-width: 60%;
+	display: block;
+}
+span.licence-holder-ipad {
+	float:left;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	color:#00335b;	
+	padding-right:10px;
+	margin-top:17px;
+}
+span.licence-holder-ipad a {
+	color:#00335b;
+}
+#socials {
+	float:right;	
+	margin-right:4.79%;
+	width:100%;
+}
+#socials img {
+	/*float:right;*/
+}
+a.fb, a.li, a.tw, a.yt {
+	width:28px;
+	height:30px;
+	cursor:pointer;	
+	margin-left:3px;
+	margin-top:3px;
+	text-indent:-9999px;
+	float:left;
+}
+a.fb {
+	background:url(../images/fb.png) no-repeat;	
+}
+a.li {
+	background:url(../images/li.png) no-repeat;	
+}
+a.tw {
+	background:url(../images/tw.png) no-repeat;	
+}
+a.yt {
+	background:url(../images/yt.png) no-repeat;	
+}
+#search-box {
+	float:right;	
+	margin-top:6px;
+	margin-right:0;
+	background:#01355d;
+	padding:2.2% 4.9%;
+	width:95%;
+	
+	/*border-radius:10px 10px 0 0;
+	-moz-border-radius:10px 10px 0 0;
+	-webkit-border-radius:10px 10px 0 0;*/
+}
+#search-box label {
+	float:left;
+	color:#ffffff;
+	font-weight:bold;	
+	line-height:17px;
+	width:88%;
+}
+#search-box label input {
+	float:none;
+	width:66%;
+	height:17px;
+	line-height:17px;
+	border:1px solid #000000;
+	color:#000000;	
+	text-indent:7px;
+}
+.btn-go {
+	float:left;
+	width:10.5%;
+	height:21px;
+	background-color:#3c7d90;
+	color:#ffffff;
+	line-height:21px;
+	border:none;
+	cursor:pointer;	
+	position:relative;
+	left:-6px;
+	padding:0;
+}
+.btn-go:hover {
+	background-color:#3f7585;	
+}
+
+/*content area*/
+#content {
+	max-width: 768px;
+	margin:0.8% auto 0 auto; 
+	padding-left: 4.94%;
+	padding-right: 4.94%;
+}
+#banner {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	margin-bottom:299px !important;
+	padding-bottom: 5px;
+	width:99%;
+}
+#banner a{
+position:absolute;
+}
+.banner-img {
+	padding:4px;
+	border:1px solid #cbcac9;
+	max-width:768px;
+	width:99%;	
+}
+
+/*ipad-menu area*/
+.mobile-menu-container {
+	display:block;	
+	width:100%;
+	margin:0 auto;
+}
+.main-links {
+	float:left;
+	margin-bottom:5px;
+	border:1px solid #c5cbd0;
+	width:99.6%;
+	position:relative;
+	
+	background: #f8f9f9; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f8f9f9 0%, #eeeeee 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f9f9), color-stop(100%,#eeeeee)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f8f9f9 0%,#eeeeee 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f8f9f9 0%,#eeeeee 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f8f9f9 0%,#eeeeee 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f8f9f9 0%,#eeeeee 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f9f9', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+	padding-left:0;
+	margin-left:0;
+	
+}
+.main-links > a {
+	cursor:pointer;
+	float:left;
+	color:#000000;
+	font-size:20px;
+	width: 93%;
+	height:48px;
+	line-height:48px;
+	background:url(http://peo.on.ca/multimedia/images/mobile-mainlinks-arrow.png) 20px no-repeat;
+	padding-left:49px;
+	
+}
+.main-links a:hover {
+	text-decoration:underline;	
+}
+.main-links > a.mainlinks_selected {
+	
+	background: #00335b; /* Old browsers */
+	background:url(http://peo.on.ca/multimedia/images/ipad-mainlinks-arrow-down.png) 20px no-repeat, -moz-linear-gradient(top,  #00335b 0%, #094a7d 19%, #094a7d 76%, #00335b 100%); /* FF3.6+ */
+	background:url(http://peo.on.ca/multimedia/images/ipad-mainlinks-arrow-down.png) 20px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00335b), color-stop(19%,#094a7d), color-stop(76%,#094a7d), color-stop(100%,#00335b)); /* Chrome,Safari4+ */
+	background:url(http://peo.on.ca/multimedia/images/ipad-mainlinks-arrow-down.png) 20px no-repeat, -webkit-linear-gradient(top,  #00335b 0%,#094a7d 19%,#094a7d 76%,#00335b 100%); /* Chrome10+,Safari5.1+ */
+	background:url(http://peo.on.ca/multimedia/images/ipad-mainlinks-arrow-down.png) 20px no-repeat, -o-linear-gradient(top,  #00335b 0%,#094a7d 19%,#094a7d 76%,#00335b 100%); /* Opera 11.10+ */
+	background:url(http://peo.on.ca/multimedia/images/ipad-mainlinks-arrow-down.png) 20px no-repeat, -ms-linear-gradient(top,  #00335b 0%,#094a7d 19%,#094a7d 76%,#00335b 100%); /* IE10+ */
+	background:url(http://peo.on.ca/multimedia/images/ipad-mainlinks-arrow-down.png) 20px no-repeat, linear-gradient(to bottom,  #00335b 0%,#094a7d 19%,#094a7d 76%,#00335b 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00335b', endColorstr='#00335b',GradientType=0 ); /* IE6-9 */	
+	border-bottom:1px solid #bfc6cc;
+}
+
+/*ipad menu main links > menu first level*/
+.main-links ul#menu_first_level {
+	float:left;	
+	display:none;
+	padding-left:0;
+	width:100%;
+	margin-top:0;
+	
+}
+.main-links ul#menu_first_level > li {
+	float:left;
+	list-style:none;
+	display:inline-block;
+	width:100%;
+	padding-left:0;
+	margin-left:0;
+	border-bottom:1px solid #bfc6cc;
+	
+}
+.main-links ul#menu_first_level > li > span {
+	cursor:pointer;
+	float:left;
+	color:#3a3b68;
+	font-size:16px;
+	font-weight:bold;	
+	height:36px;
+	line-height:36px;
+	background:url(http://peo.on.ca/multimedia/images/mobile-menu-first-level-arrow.png) 40px no-repeat;
+	padding-left:70px;
+	
+}
+
+.main-links ul#menu_first_level > li > a {
+	cursor:pointer;
+	float:left;
+	color:#3a3b68;
+	font-size:16px;
+	font-weight:bold;
+	width: 89.9%;
+	height:36px;
+	line-height:36px;	
+    padding-left:70px;
+    background:url(http://peo.on.ca/multimedia/images/mobile-menu-first-level-arrow.png) 40px no-repeat;	
+}
+.main-links ul#menu_first_level > li.second_level_links_q > a {
+	cursor:pointer;
+	float:left;
+	color:#3a3b68;
+	font-size:16px;
+	font-weight:bold;
+	width: 89.5%;
+	height:36px;
+	line-height:36px;
+	background:url(http://peo.on.ca/multimedia/images/mobile-menu-first-level-arrow.png) 40px no-repeat;
+	padding-left:70px;
+	
+}
+/*ipad menu main links > menu first level > menu second level */
+.main-links ul {
+	margin-bottom:0;	
+}
+.main-links ul#menu_first_level ul#menu_second_level {
+	float:left;	
+	display:none;
+	padding-left:0;
+	width:100%;
+	margin-top:0;
+}
+.main-links ul#menu_second_level > li {
+	float:left;
+	list-style:none;
+	display:inline-block;
+	width:100%;
+	padding-left:0;
+	margin-left:0;
+	border-bottom:1px solid #bfc6cc;
+	
+}
+.main-links ul#menu_second_level > li > a {
+	cursor:pointer;
+	float:left;
+	color:#272f8f;
+	font-size:16px;
+	font-weight:bold;
+	width: 87.1%;
+	padding-top:1.99%;
+	padding-bottom:1.99%;
+	line-height:auto;
+	background:url(http://peo.on.ca/multimedia/images/mobile-menu-second-level-arrow.png) 60px no-repeat;
+	padding-left:90px;
+	
+	vertical-align:middle;
+}
+.main-links ul#menu_first_level > li > a.menu_first_level_selected {
+	background:url(http://peo.on.ca/multimedia/images/arrow-down.png) 40px no-repeat #e0e0e2;
+	border-bottom:1px solid #bfc6cc;
+}
+
+/*ipad menu main links > menu first level > menu second level > menu third level */
+.main-links ul#menu_first_level ul#menu_second_level ul#menu_third_level {
+	float:left;	
+	display:none;
+	padding-left:0;
+	width:100%;
+	margin-top:0;
+}
+.main-links ul#menu_second_level > li > ul#menu_third_level > li {
+	float:left;
+	list-style:none;
+	display:inline-block;
+	width:50%;
+	padding-left:0;
+	margin-left:0;
+	border-bottom:1px solid #bfc6cc;
+}
+.main-links ul#menu_third_level > li > a {
+	cursor:pointer;
+	float:left;
+	color:#272f8f;
+	font-size:16px;
+	font-weight:bold;
+	width: 68%;
+	padding-top:1.99%;
+	padding-bottom:1.99%;
+	line-height:auto;
+	background:url(../images/mobile-menu-third-level-arrow.png) 60px no-repeat;
+	padding-left:90px;
+	line-height:36px;
+	vertical-align:middle;
+}
+#menu_third_level1 li a{
+font-size:16px !important;
+line-height:36px !important;
+}
+.main-links ul#menu_second_level > li > a.menu_second_level_selected {
+	background:url(http://peo.on.ca/multimedia/images/arrow-down.png) 60px no-repeat #efeff6;
+	border-bottom:1px solid #bfc6cc;
+}
+
+#four-box-container {
+	width:100%;
+	margin:0 auto;
+}
+
+.four-boxes {
+	float: left;
+	margin-left: 0;
+	width: 99.6%;
+	display: block;
+	margin-bottom:5px;
+	/*padding:3px;*/
+	height:auto;
+	border:1px solid #cbcac9;
+}
+.four-boxes div {
+	position:relative;
+	/*padding:12px 5px 10px 12px;*/
+	float:left;
+	height:auto;
+	width:100%;
+}
+.four-boxes div h5 {
+	margin-top:12px;
+	margin-left:48px;
+	margin-bottom:8px;	
+	width:68%;
+}
+.four-boxes div p {
+	margin-top:0;
+	margin-left:48px;
+	max-width:65%;
+}
+a.more-details {
+	border:1px solid #ffffff;
+	padding:10px 14px;
+	
+	border-radius:8px;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	
+	color:#ffffff;
+	font-weight:bold;
+	font-size:13px;
+	text-transform:uppercase;
+	/*float:right;
+	margin-right:2.99%;*/
+	
+    -moz-box-shadow: 0px 1px 3px #a2a2a2;
+    -webkit-box-shadow: 0px 1px 3px #a2a2a2;
+    box-shadow: 0px 1px 3px #a2a2a2;
+	
+	
+	background: #00335b; /* Old browsers */
+	background: -moz-linear-gradient(top,  #00335b 0%, #094a7d 19%, #094a7d 76%, #00335b 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00335b), color-stop(19%,#094a7d), color-stop(76%,#094a7d), color-stop(100%,#00335b)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #00335b 0%,#094a7d 19%,#094a7d 76%,#00335b 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #00335b 0%,#094a7d 19%,#094a7d 76%,#00335b 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #00335b 0%,#094a7d 19%,#094a7d 76%,#00335b 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #00335b 0%,#094a7d 19%,#094a7d 76%,#00335b 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00335b', endColorstr='#00335b',GradientType=0 ); /* IE6-9 */
+	
+	position:absolute;
+	right:4%;
+	top:30px;
+}
+a.more-details:hover {
+	text-decoration:underline;	
+}
+
+
+#public-students  div{
+	background-color:#79ddfa;
+}
+#applicants  div {
+	background-color:#d4f89a;
+}
+#eits  div {
+	background-color:#d1ccbf;
+}
+#volunteers div {
+	background-color:#bcc0d7;
+}
+
+/*
+#public-students a.more-details {
+	background-color:#00335b;
+}
+#applicants a.more-details {
+	background-color:#73880a;
+	margin-top:14px;
+}
+#eits a.more-details {
+	background-color:#60605b;
+	margin-top:14px;
+}
+#volunteers a.more-details {
+	background-color:#646986;
+}
+*/
+
+/*footer area*/
+footer {
+	margin:4px auto 0 auto;
+	/*background-color:#00335b;
+	height:32px;
+	line-height:32px;*/
+	max-width: 768px;
+	padding-left: 4.94%;
+	padding-right: 4.94%;
+	text-align:right;
+	padding-top:8px;
+	
+}
+
+.copyright {
+	color:#0a0a0a;
+	font-family:Verdana, Geneva, sans-serif;
+	font-weight:bold;
+	font-size:10px;
+	float:none;
+	margin:0;
+	padding-bottom:15px;
+}
+
+
+/*custom style*/
+.licence-holder-mobile {
+	display:none;
+}
+#social-bottom {
+	display:none;	
+}
+#nav {
+	display:none;
+}
+#banner-right {
+	display:none;
+}
+.footer-menu {
+	display:none;	
+}
+#nav-ipad-landscape {
+	display:none;	
+}
+.ipad-landscape-menu-container {
+	display:none;	
+}
+
+} /*end of media query*/
+
+/* Tablet Layout Ends  */
+
+
+/* Mobile Layout: 480px and below. */
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+body { 
+	margin: 0; 
+	font-size: 75%; 
+}		
+a {
+	text-decoration:none;	
+}
+p {
+	float:left;
+	width:100%;
+	line-height:14px;	
+}	
+h5 {
+	font-size:20px;
+	color:#000000;
+	margin-bottom:12px;
+	width:100%;
+	float:left;
+	margin-top:0;
+	font-weight:normal;	
+}
+h6 {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:17px;
+	color:#00335b;
+	margin-bottom:7px;
+	width:100%;
+	float:left;
+	margin-top:0;
+	font-weight:normal;	
+}
+
+.gridContainer {
+	/*margin-left: auto;
+	margin-right: auto;
+	width: 87.36%;
+	padding-left: 1.82%;
+	padding-right: 1.82%;*/
+	
+	width:100%
+	margin: auto;
+}
+#top-bar {
+	width:100%;
+	background-color:#054170;
+	height:4px;	
+}
+#logo {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 28.5714%;
+	display: block;
+}
+header {
+	max-width: 640px;
+	margin:0 auto;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+}
+#header-right {
+	clear: none;
+	float: right;
+	margin-left: 4.1666%;
+	max-width: 85%;
+	display: block;
+}
+#socials {
+	float:right;	
+	margin-right:17px;
+	width:49%;
+}
+#socials img {
+	/*float:right;*/
+}
+a.fb, a.li, a.tw, a.yt {
+	width:28px;
+	height:30px;
+	cursor:pointer;	
+	margin-left:3px;
+	margin-top:3px;
+	text-indent:-9999px;
+	float:left;
+}
+a.fb {
+	background:url(../images/fb.png) no-repeat;	
+}
+a.li {
+	background:url(../images/li.png) no-repeat;	
+}
+a.tw {
+	background:url(../images/tw.png) no-repeat;	
+}
+a.yt {
+	background:url(../images/yt.png) no-repeat;	
+}
+#search-box {
+	float:right;	
+	margin-top:6px;
+	margin-right:0;
+	background:#01355d;
+	padding:7px 15px;
+	width:257px;
+	
+	/*border-radius:10px 10px 0 0;
+	-moz-border-radius:10px 10px 0 0;
+	-webkit-border-radius:10px 10px 0 0;*/
+}
+#search-box label {
+	float:left;
+	color:#ffffff;
+	font-weight:bold;	
+	line-height:17px;
+	width:87%;
+}
+#search-box label input {
+	float:none;
+	width:65%;
+	height:17px;
+	line-height:17px;
+	border:1px solid #000000;
+	color:#000000;	
+	text-indent:7px;
+}
+.btn-go {
+	float:left;
+	width:30px;
+	height:21px;
+	background-color:#3c7d90;
+	color:#ffffff;
+	line-height:21px;
+	border:none;
+	cursor:pointer;	
+	position:relative;
+	left:-4px;
+	text-align:center;
+	padding:0;
+}
+.btn-go:hover {
+	background-color:#3f7585;	
+}
+
+/*content area*/
+#content {
+	max-width: 640px;
+	margin:6px auto 0 auto; 
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+}
+
+#banner {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	margin-bottom:5px;
+	width: 100%;
+	padding-bottom: 44%;
+}
+#banner a{
+ position:absolute !important; 
+}
+#banner-next{
+clear:both;
+}
+.banner-img {
+	padding:4px;
+	border:1px solid #cbcac9;
+	max-width: 640px;
+	padding: 4px;
+	width:97%;	
+}
+/*mobile-menu area*/
+.mobile-menu-container {
+	display:block;	
+	width:100%;
+	margin:0 auto;
+}
+.main-links {
+	float:left;
+	margin-bottom:5px;
+	border:1px solid #c5cbd0;
+	width:99.351%;
+	position:relative;
+	
+	background: #f8f9f9; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f8f9f9 0%, #eeeeee 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f9f9), color-stop(100%,#eeeeee)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f8f9f9 0%,#eeeeee 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f8f9f9 0%,#eeeeee 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f8f9f9 0%,#eeeeee 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f8f9f9 0%,#eeeeee 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f9f9', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+	padding-left:0;
+	margin-left:0;
+	
+}
+.main-links > a {
+	cursor:pointer;
+	float:left;
+	color:#000000;
+	font-size:20px;
+	width:84.5%;
+	height:48px;
+	line-height:48px;
+	background:url(http://peo.on.ca/multimedia/images/mobile-mainlinks-arrow.png) 20px no-repeat;
+	padding-left:49px;
+	
+}
+.main-links a:hover {
+	text-decoration:underline;	
+}
+.main-links > a.mainlinks_selected {
+
+	background: #00335b; /* Old browsers */
+	background:url(http://peo.on.ca/multimedia/images/ipad-mainlinks-arrow-down.png) 20px no-repeat, -moz-linear-gradient(top,  #00335b 0%, #094a7d 19%, #094a7d 76%, #00335b 100%); /* FF3.6+ */
+	background:url(http://peo.on.ca/multimedia/images/ipad-mainlinks-arrow-down.png) 20px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00335b), color-stop(19%,#094a7d), color-stop(76%,#094a7d), color-stop(100%,#00335b)); /* Chrome,Safari4+ */
+	background:url(http://peo.on.ca/multimedia/images/ipad-mainlinks-arrow-down.png) 20px no-repeat, -webkit-linear-gradient(top,  #00335b 0%,#094a7d 19%,#094a7d 76%,#00335b 100%); /* Chrome10+,Safari5.1+ */
+	background:url(http://peo.on.ca/multimedia/images/ipad-mainlinks-arrow-down.png) 20px no-repeat, -o-linear-gradient(top,  #00335b 0%,#094a7d 19%,#094a7d 76%,#00335b 100%); /* Opera 11.10+ */
+	background:url(http://peo.on.ca/multimedia/images/ipad-mainlinks-arrow-down.png) 20px no-repeat, -ms-linear-gradient(top,  #00335b 0%,#094a7d 19%,#094a7d 76%,#00335b 100%); /* IE10+ */
+	background:url(http://peo.on.ca/multimedia/images/ipad-mainlinks-arrow-down.png) 20px no-repeat, linear-gradient(to bottom,  #00335b 0%,#094a7d 19%,#094a7d 76%,#00335b 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00335b', endColorstr='#00335b',GradientType=0 ); /* IE6-9 */	
+	border-bottom:1px solid #bfc6cc;
+
+
+
+}
+
+/* ********** Start Other links **********/
+
+.main-links ul#ol_menu_first_level {
+	float:left;	
+	display:none;
+	padding-left:0;
+	width:100%;
+	margin-top:0;
+	
+}
+.main-links ul#ol_menu_first_level > li {
+	float:left;
+	list-style:none;
+	display:inline-block;
+	width:100%;
+	padding-left:0;
+	margin-left:0;
+	border-bottom:1px solid #bfc6cc;
+	
+}
+.main-links ul#ol_menu_first_level > li > a {
+	cursor:pointer;
+	float:left;
+	color:#3a3b68;
+	font-size:16px;
+	font-weight:bold;
+	width: 89.5%;
+	height:36px;
+	line-height:36px;		
+}
+.main-links ul#ol_menu_first_level > li.second_level_links_q > a {
+	cursor:pointer;
+	float:left;
+	color:#3a3b68;
+	font-size:16px;
+	font-weight:bold;
+	width: 89.5%;
+	height:36px;
+	line-height:36px;
+	background:url(http://peo.on.ca/multimedia/images/mobile-menu-first-level-arrow.png) 40px no-repeat;
+	padding-left:70px;
+	
+}
+.main-links ul#ol_menu_first_level > li > span {
+	cursor:pointer;
+	float:left;
+	color:#3a3b68;
+	font-size:16px;
+	font-weight:bold;	
+	height:36px;
+	line-height:36px;
+	background:url(http://peo.on.ca/multimedia/images/mobile-menu-first-level-arrow.png) 40px no-repeat;
+	padding-left:70px;	
+}
+#menu_third_level1 li a{
+font-size:16px !important;
+line-height:36px !important;
+}
+/*********************/
+
+
+/*mobile menu main links > menu first level*/
+.main-links ul#menu_first_level {
+	float:left;	
+	display:none;
+	padding-left:0;
+	width:100%;
+	margin-top:0;
+	
+}
+.main-links ul#menu_first_level > li {
+	float:left;
+	list-style:none;
+	display:inline-block;
+	width:100%;
+	padding-left:0;
+	margin-left:0;
+	border-bottom:1px solid #bfc6cc;
+	
+}
+/*modified on 7th feb*/
+.main-links ul#menu_first_level > li > a {
+	cursor:pointer;
+	float:left;
+	color:#3a3b68;
+	font-size:16px;
+	font-weight:bold;
+	width: 77.9%;
+	height:36px;
+	line-height:36px;	
+	padding-left:70px;
+	background:url(http://peo.on.ca/multimedia/images/mobile-menu-first-level-arrow.png) 40px no-repeat;
+}
+.main-links ul#menu_first_level > li > span {
+	cursor:pointer;
+	float:left;
+	color:#3a3b68;
+	font-size:16px;
+	font-weight:bold;	
+	height:36px;
+	line-height:36px;
+	
+  }
+.main-links ul#menu_first_level > li.second_level_links_q > a {
+	cursor:pointer;
+	float:left;
+	color:#3a3b68;
+	font-size:16px;
+	font-weight:bold;	
+	height:36px;
+	line-height:36px;
+	background:url(http://peo.on.ca/multimedia/images/mobile-menu-first-level-arrow.png) 40px no-repeat;
+	padding-left:70px;
+	width: 75.4%;
+}
+#menu_third_level1 li a{
+font-size:16px !important;
+line-height:36px !important;
+}
+/*mobile menu main links > menu first level > menu second level */
+.main-links ul {
+	margin-bottom:0;	
+}
+.main-links ul#menu_first_level ul#menu_second_level {
+	float:left;	
+	display:none;
+	padding-left:0;
+	width:100%;
+	margin-top:0;
+}
+.main-links ul#menu_second_level > li {
+	float:left;
+	list-style:none;
+	display:inline-block;
+	width:100%;
+	padding-left:0;
+	margin-left:0;
+	border-bottom:1px solid #bfc6cc;
+	
+}
+.main-links ul#menu_second_level > li > a {
+	cursor:pointer;
+	float:left;
+	color:#272f8f;
+	font-size:16px;
+	font-weight:bold;
+	width:71.7%;
+	padding-top:1.99%;
+	padding-bottom:1.99%;
+	line-height:auto;
+	background:url(http://peo.on.ca/multimedia/images/mobile-menu-second-level-arrow.png) 60px no-repeat;
+	padding-left:90px;
+	
+	vertical-align:middle;
+}
+.main-links ul#menu_first_level > li > a.menu_first_level_selected {
+	background:url(http://peo.on.ca/multimedia/images/arrow-down.png) 40px no-repeat #e0e0e2;
+	border-bottom:1px solid #bfc6cc;
+}
+
+/*mobile menu main links > menu first level > menu second level > menu third level */
+.main-links ul#menu_first_level ul#menu_second_level ul#menu_third_level {
+	float:left;	
+	display:none;
+	padding-left:0;
+	width:100%;
+	margin-top:0;
+}
+.main-links ul#menu_second_level > li > ul#menu_third_level > li {
+	float:left;
+	list-style:none;
+	display:inline-block;
+	width:100%;
+	padding-left:0;
+	margin-left:0;
+	border-bottom:1px solid #bfc6cc;
+	
+}
+.main-links ul#menu_third_level > li > a {
+	cursor:pointer;
+	float:left;
+	color:#272f8f;
+	font-size:16px;
+	font-weight:bold;
+	width: 61.5%%;
+	padding-top:1.99%;
+	padding-bottom:1.99%;
+	line-height:auto;
+	background:url(http://peo.on.ca/multimedia/images/mobile-menu-third-level-arrow.png) 80px no-repeat;
+	padding-left:110px;
+	
+	vertical-align:middle;
+}
+.main-links ul#menu_second_level > li > a.menu_second_level_selected {
+	background:url(http://peo.on.ca/multimedia/images/arrow-down.png) 60px no-repeat #e0e0e2;
+	border-bottom:1px solid #bfc6cc;
+}
+/***************/
+
+
+
+
+
+
+
+/********/
+
+
+
+#four-box-container {
+	width:100%;
+	margin:0 auto;
+}
+.four-boxes {
+	float: left;  
+	margin-left: 0;
+	width: 97.5%;
+	display: block;
+	margin-bottom:5px;
+	padding:3px;
+	height:auto;
+	border:1px solid #cbcac9;
+}
+.four-boxes div {
+	position:relative;
+	/*padding:12px 5px 10px 12px;*/
+	float:left;
+	height:auto;
+	width:100%;
+	padding-bottom:13px;
+}
+.four-boxes div h5 {
+	margin-top:12px;
+	margin-left:12px;	
+	width:90%;
+}
+.four-boxes div p {
+	margin-top:0;
+	margin-left:12px;
+	max-width:73%;
+}
+a.more-details {
+	border:1px solid #ffffff;
+	padding:5px 8px;
+	border-radius:15px;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	color:#ffffff;
+	font-weight:bold;
+	font-size:11px;
+	text-transform:uppercase;
+	float:right;
+	margin-right:2.99%;
+	
+    -moz-box-shadow: 0px 1px 3px #a2a2a2;
+    -webkit-box-shadow: 0px 1px 3px #a2a2a2;
+    box-shadow: 0px 1px 3px #a2a2a2;
+
+
+}
+a.more-details:hover {
+	text-decoration:underline;	
+}
+
+
+#public-students  div{
+	background-color:#79ddfa;
+}
+#applicants  div {
+	background-color:#d4f89a;
+}
+#eits  div {
+	background-color:#d1ccbf;
+}
+#volunteers div {
+	background-color:#bcc0d7;
+}
+
+#public-students a.more-details {
+	background-color:#00335b;
+}
+#applicants a.more-details {
+	background-color:#73880a;
+	margin-top:14px;
+}
+#eits a.more-details {
+	background-color:#60605b;
+	margin-top:14px;
+}
+#volunteers a.more-details {
+	background-color:#646986;
+}
+
+/*footer area*/
+footer {
+	margin:4px auto 0 auto;
+	background-color:#00335b;
+	/*height:32px;
+	line-height:32px;*/
+	max-width: 640px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	text-align:center;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+.footer-menu {
+	display:none;	
+}
+.copyright {
+	color:#dddddd;
+	font-family:Verdana, Geneva, sans-serif;
+	font-weight:bold;
+	font-size:10px;
+	float:none;
+	margin:0;
+}
+
+/*custom style*/
+.licence-holder-ipad {
+	display:none;	
+}
+span.licence-holder-mobile {
+	float:right;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	color:#00335b;	
+	margin-top:8px;
+	margin-bottom:5px;
+	clear:both;
+	
+}
+#social-bottom {
+	display:none;
+}
+#nav {
+	display:none;
+}
+#banner-right {
+	display:none;
+}
+#nav-ipad-landscape {
+	display:none;	
+}
+.ipad-landscape-menu-container {
+	display:none;	
+}
+
+} /*end of media query*/
+
+/* Mobile Layout Ends */
+
